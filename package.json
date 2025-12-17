@@ -1,0 +1,30 @@
+{
+  "name": "wot-mcp",
+  "version": "0.1.0",
+  "description": "Bridge Web of Things (WoT) devices to AI assistants via Model Context Protocol (MCP)",
+  "type": "module",
+  "bin": {
+    "wot-mcp": "./dist/main.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "@node-wot/binding-coap": "^0.9.1",
+    "@node-wot/binding-http": "^0.9.1",
+    "@node-wot/binding-mqtt": "^0.9.1",
+    "@node-wot/core": "^0.9.1",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "wot-typescript-definitions": "^0.8.0-SNAPSHOT.31"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}
