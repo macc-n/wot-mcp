@@ -92,7 +92,7 @@ Creates a unique tool for every capability:
     * If the property is writable, creates also a **setter** tool.
 * WoT Action:
     * Create a single tool with the input schema derived directly from the WoT Action input schema.
-*WoT Event:
+* WoT Event:
     * Exposes a subscriptable resource.
 ```bash
 npm start -- --tool-strategy explicit --config things-config.json
